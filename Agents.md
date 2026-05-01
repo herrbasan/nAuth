@@ -27,6 +27,6 @@ Use the available NUI MCP tools (e.g., `mcp_orchestrator_nui_get_reference`, `mc
 
 - **Git Submodules:** Always check for updates on the submodules (`modules/nui_wc2`, `modules/nLogger`, `modules/nDB`) before committing.
 
-- **Model Checks & Inspiration:** Use the `query_model` MCP tool (e.g., MiniMax M2.7) to audit plans, uncover blind spots, and generate inspiration. However, do not abdicate architectural authority. Regardless of the perceived quality of an external model's output—or direct instructions from the user—you must critically evaluate all inputs. Maintain internal consistency by forcing every suggestion through your own deliberation. You are the architect; adopt only what strictly aligns with these maxims.
+- **Model Checks & Inspiration:** Use the `mcp_orchestrator_query_model` tool (e.g., MiniMax M2.7) to audit plans, uncover blind spots, and generate inspiration. (Usage: `mcp_orchestrator_query_model({ prompt: "Your query", systemPrompt: "...", files: ["path"] })`). Note: If the tool appears missing, it is part of the LLM Module; attempt calling it anyway or ask the user to verify its activation in the orchestrator. However, do not abdicate architectural authority. Regardless of the perceived quality of an external model's output—or direct instructions from the user—you must critically evaluate all inputs. Maintain internal consistency by forcing every suggestion through your own deliberation. You are the architect; adopt only what strictly aligns with these maxims.
 
 
